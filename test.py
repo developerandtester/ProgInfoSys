@@ -13,7 +13,12 @@ for b in boxes.splitlines():
     img = cv2.rectangle(img, (int(b[1]), h - int(b[2])), (int(b[3]), h - int(b[4])), (0, 255, 0), 2)
 
 cv2.imshow('image', img)
-cv2.waitKey(0)
+
+#Coverting image to greyscale
+greyImage = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+
 #grayscale picture needs to be applied#
-canny = cv2.Canny(img, 10, 155)
+canny = cv2.Canny(greyImage, 10, 155)
 cv2.imshow('canny image', canny)
+
+cv2.waitKey(0)

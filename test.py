@@ -6,8 +6,8 @@ from scipy import ndimage
 image = cv2.imread('test.jpg')
 cv2.imshow('OutputImage', image) #test
 
-h, w, c = img.shape
-boxes = pytesseract.image_to_boxes(img) 
+h, w, c = image.shape
+boxes = pytesseract.image_to_boxes(image) 
 for b in boxes.splitlines():
     b = b.split(' ')
     img = cv2.rectangle(img, (int(b[1]), h - int(b[2])), (int(b[3]), h - int(b[4])), (0, 255, 0), 2)

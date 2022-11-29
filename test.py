@@ -4,7 +4,7 @@ import pytesseract
 from scipy import ndimage
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
-image = cv2.imread('test.jpg')
+image = cv2.imread('TestNumberPlate.jpg')
 cv2.imshow('OutputImage', image) #test
 
 

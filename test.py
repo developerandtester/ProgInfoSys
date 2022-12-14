@@ -12,20 +12,22 @@ image2 = cv2.imread('test.jpg')
 d = pytesseract.image_to_string(image)
 print(d)
 
+print('Resolving Captcha')
+
 def resolve(img):
 	enhancedImage = enhance()
 	return pytesseract.image_to_string(enhancedImage)
 
-def enhance(img):
+def enhance():
+	img = cv2.imread('E:\DBS\Prog_Project\ProgInfoSys\in\Audi-A6-528818b.jpg_0000_0311_0286_0189_0044.png', 0)
 	kernel = np.ones((2,2), np.uint8)
-	img_erosion = cv2.erode(img, kernel, iterations=1)    
-	img_dilation = cv2.dilate(img_erosion, kernel, iterations=1)    
+	img_erosion = cv2.erode(img, kernel, iterations=1)
+	img_dilation = cv2.dilate(img, kernel, iterations=1)
 	erosion_again = cv2.erode(img_dilation, kernel, iterations=1)
-	final = cv2.GaussianBlur(erosion_again, (1, 1), 0)    
+	final = cv2.GaussianBlur(erosion_again, (1, 1), 0)
 	return final
 
 
-print('Resolving Captcha')
 captcha_text = resolve('E:\DBS\Prog_Project\ProgInfoSys\in\Audi-A6-528818b.jpg_0000_0311_0286_0189_0044.png')
 # img2= enhance(resolve(image))
 # cv2.imshow('image',img2)

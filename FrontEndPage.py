@@ -10,7 +10,7 @@ app.config['SECRET_KEY'] = 'PythonBoys'
 app.config['UPLOAD_FOLDER'] = 'UploadImages'
 
 class UploadPicture(FlaskForm):
-    file = FileField("Picture")
+    file = FileField("Picture", validators=[InputRequired()])
     submit = SubmitField("Upload Picture")
 
 @app.route("/", methods = ['GET',"POST"])

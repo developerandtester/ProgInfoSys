@@ -5,7 +5,7 @@ from scipy import ndimage
 from pytesseract import Output
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
-image = cv2.imread('E:\DBS\Prog_Project\ProgInfoSys\in\Audi-A6-528818b.jpg_0000_0311_0286_0189_0044.png')
+image = cv2.imread('E:\DBS\Prog_Project\ProgInfoSys\in\Volkswagen-Vento-527913c.jpg_0006_0377_0362_0222_0059.png')
 #cv2.imshow('OutputImage', image) #test
 image2 = cv2.imread('test.jpg')
 #d = pytesseract.image_to_data(image, output_type=Output.DICT)

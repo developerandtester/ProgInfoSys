@@ -1,5 +1,6 @@
 # ProgInfoSys
 
+The git link for the project is : https://github.com/developerandtester/ProgInfoSys
 
 
 *This is place holder for Prathamesh number 1*
@@ -39,6 +40,78 @@ To validate the file, I used validation such as FileAllowed, and FileRequired.
 To submit the file, SubmitField was used.
 We used index2.html to design the layout of the frontend page. 
 We upload the image in flask form and then later send that information to the HTML page to display.
+
+
+Prathamesh Vyas(10611964):
+
+Researched on various OCR technologies like pytesseract and PaddleOCR. Then tested them on sample images while using OpenCV. But pytesseract gave us unaccurate results as seen in test.py file. So we went with Paddle. And then we thought we could implement a neural network using darknet which will capture the license plates from videos of traffic and track the plates on a moving car. But the neural network required GPU and larger time to train a model. So we decided to just go with OCR. 
+
+My contribution was that I research the methods, implemented them. I helped create the backend file Frontend2.py, and helped deployed the project on Azure. 
+Output comes with accuracy percentage
+Programming via python to achieve project goal.
+
+We used Microsoft Azure platform for deployment, which gave us a cloud environment to run our project. We used PaddleOCR and OpenCV to detect the license plates in the images and videos. We used a flask server to connect the front end and back end. We used HTML, CSS and JavaScript to design the front end of the project. We also used pandas and numpy libraries to store the information of the license plates. 
+
+The output of our project is the license plate number with accuracy percentage. We were able to successfully detect the license plates in the images and videos with satisfactory accuracy.
+
+
+Nitin:
+
+
+
+
+
+
+Licenses:
+
+Flask:
+
+BSD-3-Clause Source License
+The BSD-3-Clause license applies to all files in the Flask repository and source distribution. This includes Flask’s source code, the examples, and tests, as well as the documentation.
+
+Copyright 2010 Pallets
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+Paddle:
+Copyright (c) 2016 PaddlePaddle Authors. All Rights Reserved.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+
+Tesseract:
+
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
 
 
 

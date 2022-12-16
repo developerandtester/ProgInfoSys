@@ -23,13 +23,11 @@ class UploadForm(FlaskForm):
     )
     submit = SubmitField('Upload')
 
-@app.route('/', methods= ['GET','POST'])
-
 @app.route('/UploadImages/<filename>')
 def get_file(filename):
     return send_from_directory(app.config['UPLOADED_PHOTOS_DEST'],filename)
     
-
+@app.route('/index2.html', methods= ['GET','POST'])
 def upload_image():
     form= UploadForm()
     if form.validate_on_submit():

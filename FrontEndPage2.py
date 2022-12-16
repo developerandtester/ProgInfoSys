@@ -6,6 +6,8 @@ from wtforms import SubmitField
 from werkzeug.utils import secure_filename
 import os
 from wtforms.validators import InputRequired
+from paddleocr import PaddleOCR
+ocr = PaddleOCR(lang='en',rec_algorithm='CRNN')
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'PythonBoys'
@@ -33,9 +35,17 @@ def upload_image():
     if form.validate_on_submit():
         filename = photos.save(form.photo.data)
         file_url = url_for('get_file', filename=filename)
+        file_abs_path = os.path.join(app.config['UPLOADED_PHOTOS_DEST'], filename)
+        ocr_output=ocr.ocr(file_abs_path, cls=False, det=False)
+        res = ocr_output[0]
+        PlateNo=''
+        for line in res:
+            PlateNo=line
+        file_output ='The license plate number is '+PlateNo[0] + ' The accuracy of result is around ' + str((round(float(PlateNo[1]*100),2)))
     else:
         file_url = None
-    return render_template('index2.html', form = form, file_url = file_url)
+        file_output = None
+    return render_template('index2.html', form = form, file_url = file_url,file_output=file_output)
 
 if __name__ == "__main__":
     app.run(debug=True)

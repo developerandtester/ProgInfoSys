@@ -57,6 +57,7 @@ The output of our project is the license plate number with accuracy percentage. 
 
 Nitin:
 
+I researched on image optimization methods that we could implement in pytesseract. I used the canny method for the edge detection and tested it using a sample image. I created the index page that was used in the frontend. I then implemented the whole software on Azure. First I created a virtual device on Azure amd configured the SSH and DNS to deploy the website on port 8080. I cloned the code from the Git reppository and installed packages and dependencies required in the project. We finally deployed the complete vode and tested it multiple times. I helped my team mates on the frontend development and resolved issues regarding it. 
 
 
 

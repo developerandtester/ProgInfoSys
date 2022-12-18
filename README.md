@@ -57,8 +57,14 @@ The output of our project is the license plate number with accuracy percentage. 
 
 Nitin:
 
-I researched on image optimization methods that we could implement in pytesseract. I used the canny method for the edge detection and tested it using a sample image. I created the index page that was used in the frontend. I then implemented the whole software on Azure. First I created a virtual device on Azure amd configured the SSH and DNS to deploy the website on port 8080. I cloned the code from the Git reppository and installed packages and dependencies required in the project. We finally deployed the complete vode and tested it multiple times. I helped my team mates on the frontend development and resolved issues regarding it. 
 
+I worked on a project that involved integrating image optimization methods with pytesseract. For this, I used the canny method for edge detection and tested it using a sample image. After testing it, I moved on to creating the index page for the frontend. After this, I implemented the software on Azure. 
+
+To do that, I first created a virtual device on Azure and configured the SSH and DNS for the website. After this, I cloned the code from the Git repository and installed the packages and dependencies required for the project. After this, I deployed the code and tested it multiple times to ensure that it was working properly. 
+
+Apart from the backend development, I also helped my team mates on the frontend development and resolved any issues regarding it. This helped us in improving the overall user experience of the website. After this, I helped them in deploying the code on the production server. 
+
+Overall, this project helped me gain a lot of experience in developing software using OCR . It also helped me learn more about the various optimization techniques used for images and how to implement using CRNN (convolutional recurrent neural network). Additionally, I also got an opportunity to work with Azure and learn about its various features.
 
 
 

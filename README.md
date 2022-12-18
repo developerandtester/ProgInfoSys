@@ -20,9 +20,9 @@ Canny Method is used for edge detection.
 
 Overview: 
 
-A license plate reader (LPR) is a device designed to automatically detect and record vehicle license plates. It consists of a camera, a processor, and a software package that can identify license plates. The camera captures an image of the license plate and the processor converts it into a digital format. The software package then uses algorithms to recognize the characters on the license plate and log the information.
+A license plate reader (LPR) is a software designed to automatically detect and record vehicle license plates. It consists of an image, a processor, and a software package that can identify license plates. We first upload an image of the license plate and the processor converts it into a digital format. The software package then uses algorithms to recognize the characters on the license plate and log the information.
 
-Here, we are implementing a Optical character recognition using PaddleOCR which offers multilingual support 
+Here, we are implementing a Optical character recognition using PaddleOCR which offers multilingual support.
 
 
 

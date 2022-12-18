@@ -1,5 +1,16 @@
 # ProgInfoSys
 
+Project Title : 
+License Plate Reader using Paddle OCR and Flask Deployed on Azure
+
+Submitted by :
+
+Abhimanyu Yadav     10615426
+Nitin Rawat         10623844
+Prathamesh Vyas     10611964
+
+
+
 The git link for the project is : https://github.com/developerandtester/ProgInfoSys
 
 
@@ -9,6 +20,12 @@ The git link for the project is : https://github.com/developerandtester/ProgInfo
 
 *This is a test commit from Abhimanyu*
 
+Overview: 
+
+A license plate reader (LPR) is a software designed to automatically detect and record vehicle license plates. It consists of an image, a processor, and a software package that can identify license plates. We first upload an image of the license plate and the processor converts it into a digital format. The software package then uses algorithms to recognize the characters on the license plate and log the information.
+
+
+Method 1 : Using Pyteresract OCR
 
 #Taking refference from OpenCV Documentation
 CV2: OpenCV
@@ -18,23 +35,76 @@ We are converting the image to greysclay to apply the canny method over it.
 
 Canny Method is used for edge detection. 
 
-Overview: 
 
-A license plate reader (LPR) is a software designed to automatically detect and record vehicle license plates. It consists of an image, a processor, and a software package that can identify license plates. We first upload an image of the license plate and the processor converts it into a digital format. The software package then uses algorithms to recognize the characters on the license plate and log the information.
+Method 2: Using PaddleOCR
 
-Here, we are implementing a Optical character recognition using PaddleOCR which offers multilingual support.
+
+PaddleOCR :
+It is an example of such a framework or toolbox for OCR. PaddleOCR provides customers with multilingual, useful OCR tools that enable users to apply and train various models with just a few lines of code. PaddleOCR has a wide range of models available in its toolset, including PP-OCR, a number of excellent pre-trained OCR, the most recent algorithms like SRN, and well-known OCR algorithms like CRNN.
+
+Technology Used :
+
+1. Python: 
+1.1 Flask Module: Used as a frontend web service. 
+1.2 PaddleOCR Module: To convert the text from image into string. 
+2. HTML: As the frontend page used to upload file and display result.
+3. BootStrap: To add pre-defined stylesheet framework.
+4. Azure: We are using Azure to deploy our website on cloud.
+
+
+Front End : 
+Flask is used for front end in our project. 
+Flask  is a web framework, it's a Python module that lets you develop web applications easily.
+1. Imported packages
+2. Upload image for OCR
+3. Validation of input
+4. Display result 
+
+
+Back End :
+Back end was achieved using Python.
+Python is a high-level, interpreted, general-purpose programming language. It is used for web development, software development, data science, artificial intelligence, machine learning, scripting, and automation. Python is also widely used in scientific computing and data analysis, as well as in various application domains such as finance, banking, and engineering. 
+1. Research on OCR technologies. 
+2. Tested on researched resultant tech.
+3. Implemented efficient packages for accurate results.
+4. Output comes with accuracy percentage
+5. Programming via python to achieve project goal.
+
+Deployment:
+Implementation of project was done using  Azure 
+Azure is a cloud computing platform from Microsoft that provides a wide range of services, such as computing, storage, networking, artificial intelligence, and analytics. It is used by organizations to create, manage, and deploy applications and services in a cloud-based environment, which can be used to build, test, deploy, and manage applications from anywhere.
+1. Created virtual machine
+2. Created  SSH and DNS Deployment
+3. Linked with github
+4. Installed paddle and flask
+5. Deployed the program 
+
+
+
+
+Use Case: 
+Let's have a look at some examples of how ALPR has been used in real-world situations without the need for human intervention. It is a very sophisticated and clever technology.
+
+1. Trafic Violation: Police or law enforcement can use a single camera and the ALPR to identify any traffic violations committed by a vehicle at a traffic light. Real-time vehicle identification of any stolen or unregistered automobiles is also possible with it.
+2. Parking management: ALPR allows for the elimination of any human interaction, which is sometimes required in parking management. 
+3. Parking Lot: The parking lot cameras can read license plates at the entry and save them in a database, or they can only let cars in if they are in the correct spot.
+
+
 
 
 
 Contribution: 
 
 Abhimanyu Yadav: 
-Studied pyteseract OCR with my group members and implemented conversion of a colour image to greyScale that was further used in the canny method for edge detection. Since pyteseract OCR was not giving good results even after enhancing images. We decided to use Paddle OCR in the backend. I implemented the front end using the Flask web framework. The front end has the following functionality - 
+Studied pyteseract OCR with my group members and implemented conversion of a colour image to greyScale that was further used in the canny method for edge detection. Since pyteseract OCR was not giving good results even after enhancing images. We decided to use Paddle OCR in the backend. I implemented the front end using the Flask web framework. 
+
+The front end has the following functionality - 
 - Choose and upload an image File (number plate) from the local system.
 - Validate if there is any file and the file type is IMAGE. 
 - Submit the file for OCR to run.
 - Display the image of the number plate
 - Display the detected number plate characters and the accuracy of the result. 
+
 To upload the file, I used the FileField function from the flask. 
 To validate the file, I used validation such as FileAllowed, and FileRequired.
 To submit the file, SubmitField was used.
